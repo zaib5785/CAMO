@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Support and privacy policy for CAMO, the iPhone camera with film looks built in.">
+<title>CAMO Help &amp; Privacy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;800;900&family=Figtree:wght@400;500;600&display=swap">
+<style>
+  /* Layout: one calm reading column; a forest-green masthead band, then Support and Privacy sections. */
+  :root {
+    --bg: #F6F4EC;
+    --surface: #FFFFFF;
+    --ink: #17241F;
+    --muted: #55645D;
+    --line: #DCD8CB;
+    --forest: #1A3833;
+    --forest-2: #3F7A6E;
+    --cream: #F5DEAE;
+    --display: "Archivo", "Avenir Next", "Helvetica Neue", Arial, sans-serif;
+    --body: "Figtree", -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #0F1B18; --surface: #16251F; --ink: #ECE7DA; --muted: #A7B3AC;
+      --line: #2A3B35; --forest: #1A3833; --forest-2: #7FB8AA; --cream: #F5DEAE;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #0F1B18; --surface: #16251F; --ink: #ECE7DA; --muted: #A7B3AC;
+    --line: #2A3B35; --forest: #1A3833; --forest-2: #7FB8AA; --cream: #F5DEAE;
+    color-scheme: dark;
+  }
+  body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 16px; line-height: 1.6; }
+  .band { background: var(--forest); color: var(--cream); }
+  .wrap {
+    max-width: 680px; margin: 0 auto;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .band .wrap { padding-block: 44px 36px; display: grid; gap: 14px; }
+  .wordmark { font-family: var(--display); font-weight: 900; font-size: clamp(44px, 10vw, 64px); letter-spacing: 0.02em; line-height: 1; margin: 0; }
+  .acronym { font-family: var(--display); font-weight: 500; font-size: 15px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.85; margin: 0; }
+  .band nav { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+  .band nav a {
+    color: var(--forest); background: var(--cream); text-decoration: none; font-weight: 600; font-size: 14px;
+    padding: 7px 14px; border-radius: 999px;
+  }
+  .band nav a:focus-visible, a:focus-visible, button:focus-visible { outline: 2px solid var(--forest-2); outline-offset: 2px; }
+  main.wrap { padding-block: 40px 64px; display: grid; gap: 56px; }
+  section { display: grid; gap: 16px; }
+  h2 { font-family: var(--display); font-weight: 800; font-size: 28px; margin: 0; text-wrap: balance; }
+  h3 { font-family: var(--display); font-weight: 800; font-size: 17px; margin: 0; }
+  p { margin: 0; max-width: 65ch; }
+  .muted { color: var(--muted); font-size: 14px; }
+  .contact {
+    background: var(--surface); border: 1px solid var(--line); border-radius: 14px;
+    padding: 18px 20px; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px;
+  }
+  .contact .label { font-size: 12px; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: var(--muted); }
+  .email { font-weight: 600; font-size: 18px; user-select: all; word-break: break-all; }
+  .contact button {
+    font: inherit; font-weight: 600; font-size: 14px; cursor: pointer;
+    background: var(--forest); color: var(--cream); border: 0; border-radius: 999px; padding: 8px 16px;
+  }
+  .qa { display: grid; gap: 18px; }
+  .qa div { display: grid; gap: 4px; padding-top: 16px; border-top: 1px solid var(--line); }
+  .points { display: grid; gap: 14px; }
+  .points div { display: grid; gap: 4px; }
+  ul { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+  footer { color: var(--muted); font-size: 13px; }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+</head>
+<body>
+<header class="band">
+  <div class="wrap">
+    <p class="wordmark">CAMO</p>
+    <p class="acronym">Capture. Adjust. Match. Own.</p>
+    <nav>
+      <a href="#support">Support</a>
+      <a href="#privacy">Privacy Policy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+  <section id="support" aria-labelledby="support-title">
+    <h2 id="support-title">Support</h2>
+    <p>Questions, bugs or ideas for a new look? Email us and we'll get back to you, usually within a few days.</p>
+    <div class="contact">
+      <div>
+        <div class="label">Email</div>
+        <div class="email" id="email">camo.app.help@gmail.com</div>
+      </div>
+      <button type="button" id="copy">Copy email</button>
+    </div>
+
+    <div class="qa">
+      <div>
+        <h3>The camera is black or won't open</h3>
+        <p>CAMO needs camera access. Open the iPhone Settings app, tap Apps, then CAMO, and turn on Camera.</p>
+      </div>
+      <div>
+        <h3>Where are my photos?</h3>
+        <p>Tap the photo in the bottom-left corner of the camera to open your CAMO gallery. Every shot is also saved to your camera roll.</p>
+      </div>
+      <div>
+        <h3>Can I change a look after taking a photo?</h3>
+        <p>Yes. CAMO keeps the original of every photo. Open it in the gallery and tap Edit look. Press and hold a photo to see the original.</p>
+      </div>
+      <div>
+        <h3>How do I record a video?</h3>
+        <p>Press and hold the shutter button. Clips can be up to 15 seconds.</p>
+      </div>
+      <div>
+        <h3>How do I share a look with a friend?</h3>
+        <p>Press and hold a look you made or copied, then tap Share look. Your friend can scan the QR code with CAMO or their iPhone camera.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="privacy" aria-labelledby="privacy-title">
+    <h2 id="privacy-title">Privacy Policy</h2>
+    <p class="muted">Effective October 25, 2026</p>
+    <p>CAMO is a camera app made by Zaib Qureshi. This policy explains what CAMO does with your information. The short version: CAMO does not collect any data.</p>
+
+    <div class="points">
+      <div>
+        <h3>Your photos stay on your phone</h3>
+        <p>Photos, videos and looks you create are stored only on your device. CAMO does not upload them anywhere.</p>
+      </div>
+      <div>
+        <h3>No accounts, ads or tracking</h3>
+        <p>CAMO has no sign-in, shows no ads, and does not use analytics or tracking tools. It does not share information with anyone.</p>
+      </div>
+      <div>
+        <h3>Permissions CAMO asks for</h3>
+        <ul>
+          <li><strong>Camera:</strong> to show the live camera and take photos and videos.</li>
+          <li><strong>Microphone:</strong> only while you hold the shutter to record a video.</li>
+          <li><strong>Photos:</strong> to save your shots to your camera roll, and to open photos you pick yourself (to copy a look or bring them into CAMO).</li>
+        </ul>
+        <p>You can turn any of these off at any time in the iPhone Settings app.</p>
+      </div>
+      <div>
+        <h3>Sharing</h3>
+        <p>Nothing leaves your phone unless you choose to share it, for example sending a photo or a look's QR code to a friend. What happens after that is up to the app you share with.</p>
+      </div>
+      <div>
+        <h3>Children</h3>
+        <p>CAMO does not collect personal information from anyone, including children.</p>
+      </div>
+      <div>
+        <h3>Changes</h3>
+        <p>If this policy changes, the new version will be posted on this page with a new date.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p>Questions about privacy: camo.app.help@gmail.com</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>© 2026 Zaib Qureshi. CAMO is a camera app for iPhone.</footer>
+</main>
+
+<script>
+  (function () {
+    var btn = document.getElementById('copy');
+    var email = document.getElementById('email');
+    btn.addEventListener('click', function () {
+      var text = email.textContent.trim();
+      function selectIt() {
+        var r = document.createRange(); r.selectNodeContents(email);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        btn.textContent = 'Selected';
+      }
+      try {
+        navigator.clipboard.writeText(text).then(function () { btn.textContent = 'Copied'; }, selectIt);
+      } catch (e) { selectIt(); }
+      setTimeout(function () { btn.textContent = 'Copy email'; }, 2000);
+    });
+    var h = location.hash.replace('#', '');
+    if (h === 'privacy' || h === 'support') {
+      var el = document.getElementById(h);
+      if (el) el.scrollIntoView();
+    }
+  })();
+</script>
+
+</body>
+</html>
